@@ -1,390 +1,273 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nyne Art — Ilustração Digital</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nyne Art — Portfólio de Ilustração</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Quicksand:wght@400;500;600;700&family=Press+Start+2P&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<!-- NAV -->
-<nav id="nav">
-  <a href="#inicio" class="nav-logo">Nyne Art</a>
-  <ul class="nav-links">
-    <li><a href="#inicio">Início</a></li>
-    <li><a href="#portfolio">Portfólio</a></li>
-    <li><a href="#sketch">Sketch</a></li>
-    <li><a href="#valores">Tabela de Valores</a></li>
-    <li><a href="#sobre">Sobre Mim</a></li>
-  </ul>
-</nav>
-
-<!-- HERO -->
-<section id="inicio" style="padding:0; max-width:none;">
-  <div id="hero">
-    <!-- Fundo artístico decorativo (SVG gerado) -->
-    <div class="hero-bg"></div>
-    <div class="hero-artwork" id="heroArtwork">
-      <!-- Arte abstrata decorativa como placeholder -->
-      <svg viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          <radialGradient id="gA" cx="50%" cy="40%">
-            <stop offset="0%" stop-color="#E8896A" stop-opacity="0.3"/>
-            <stop offset="100%" stop-color="#E8896A" stop-opacity="0"/>
-          </radialGradient>
-          <radialGradient id="gB" cx="70%" cy="65%">
-            <stop offset="0%" stop-color="#D4A843" stop-opacity="0.25"/>
-            <stop offset="100%" stop-color="#D4A843" stop-opacity="0"/>
-          </radialGradient>
-        </defs>
-        <!-- Pinceladas abstratas -->
-        <ellipse cx="720" cy="380" rx="520" ry="260" fill="url(#gA)"/>
-        <ellipse cx="900" cy="550" rx="340" ry="180" fill="url(#gB)"/>
-        <path d="M200,700 Q400,400 700,350 Q900,310 1100,420 Q1300,520 1440,480" stroke="#E8896A" stroke-width="1.5" fill="none" opacity="0.4"/>
-        <path d="M0,500 Q200,350 500,400 Q800,450 1000,300 Q1200,160 1440,220" stroke="#D4A843" stroke-width="1.2" fill="none" opacity="0.35"/>
-        <path d="M100,200 Q350,500 600,550 Q850,600 1000,450 Q1150,300 1440,380" stroke="#E8896A" stroke-width="0.8" fill="none" opacity="0.2"/>
-        <!-- Pontos decorativos -->
-        <circle cx="300" cy="200" r="1.5" fill="#E8896A" opacity="0.4"/>
-        <circle cx="1100" cy="150" r="1" fill="#D4A843" opacity="0.3"/>
-        <circle cx="750" cy="650" r="2" fill="#E8896A" opacity="0.25"/>
-        <circle cx="500" cy="120" r="1" fill="#D4A843" opacity="0.2"/>
-        <circle cx="1250" cy="600" r="1.5" fill="#E8896A" opacity="0.3"/>
-      </svg>
-    </div>
-    <!-- Nota de onde substituir a imagem de fundo -->
-    <div class="upload-hint">↑ Substitua pelo seu desenho de fundo editando o CSS do hero</div>
-
-    <div class="hero-content">
-      <p class="hero-eyebrow">Ilustração Digital</p>
-      <h1 class="hero-name">Nyne<br><em>Art</em></h1>
-      <p class="hero-sub">Criando mundos em cada traço</p>
-    </div>
-
-    <div class="scroll-cue">
-      <div class="scroll-line"></div>
-      <span>Rolar</span>
-    </div>
-  </div>
-</section>
-
-<!-- PORTFOLIO -->
-<section id="portfolio">
-  <p class="section-label reveal">Trabalhos Recentes</p>
-  <h2 class="section-title reveal">Portfó<em>lio</em></h2>
-
-  <div class="portfolio-grid reveal" id="portfolioGrid">
-
-    <div class="portfolio-item item-wide" data-index="0" data-gallery="portfolio" data-name="Série Fantasia" data-tag="Ilustração Digital">
-      <div class="item-placeholder" style="--ph-bg:#EFE8F5;">
-        <svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg">
-          <defs><radialGradient id="p0" cx="50%" cy="50%"><stop offset="0%" stop-color="#E8896A" stop-opacity="0.5"/><stop offset="100%" stop-color="#E8896A" stop-opacity="0"/></radialGradient></defs>
-          <rect width="200" height="120" fill="none"/>
-          <ellipse cx="100" cy="60" rx="70" ry="45" fill="url(#p0)"/>
-          <path d="M60,90 Q80,40 100,35 Q120,40 140,90" stroke="#E8896A" stroke-width="0.8" fill="none" opacity="0.6"/>
-          <circle cx="100" cy="30" r="8" fill="none" stroke="#D4A843" stroke-width="0.6" opacity="0.5"/>
-          <text x="100" y="110" text-anchor="middle" font-size="7" fill="#E8896A" opacity="0.4" font-family="serif" font-style="italic">Série Fantasia</text>
-        </svg>
+  <!-- ============ NAV ============ -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner wrap">
+      <div class="nav-logo">
+        <span class="logo-pixel">Nyne Art</span>
       </div>
-      <div class="item-overlay">
-        <div>
-          <p class="item-tag">Ilustração Digital</p>
-          <p class="item-label">Série Fantasia</p>
-        </div>
-      </div>
-      <div class="zoom-icon"><svg viewBox="0 0 24 24" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="22" y2="22"/><line x1="8" y1="11" x2="14" y2="11"/><line x1="11" y1="8" x2="11" y2="14"/></svg></div>
-    </div>
-
-    <div class="portfolio-item" data-index="1" data-gallery="portfolio" data-name="Retrato Etéreo" data-tag="Character Art">
-      <div class="item-placeholder" style="--ph-bg:#E8EEF5;">
-        <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="60" cy="45" r="22" fill="none" stroke="#D4A843" stroke-width="0.7" opacity="0.4"/>
-          <ellipse cx="60" cy="85" rx="30" ry="18" fill="none" stroke="#D4A843" stroke-width="0.5" opacity="0.3"/>
-          <path d="M38,65 Q60,90 82,65" stroke="#E8896A" stroke-width="0.7" fill="none" opacity="0.5"/>
-          <text x="60" y="112" text-anchor="middle" font-size="6" fill="#D4A843" opacity="0.4" font-family="serif" font-style="italic">Retrato Etéreo</text>
-        </svg>
-      </div>
-      <div class="item-overlay">
-        <div>
-          <p class="item-tag">Character Art</p>
-          <p class="item-label">Retrato Etéreo</p>
-        </div>
-      </div>
-      <div class="zoom-icon"><svg viewBox="0 0 24 24" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="22" y2="22"/><line x1="8" y1="11" x2="14" y2="11"/><line x1="11" y1="8" x2="11" y2="14"/></svg></div>
-    </div>
-
-    <div class="portfolio-item" data-index="2" data-gallery="portfolio" data-name="Paisagem Mística" data-tag="Background Art">
-      <div class="item-placeholder" style="--ph-bg:#E8F3EF;">
-        <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0,80 Q30,50 60,70 Q90,90 120,60" stroke="#A8D9C8" stroke-width="0.8" fill="none" opacity="0.5"/>
-          <path d="M0,90 Q40,65 80,80 Q100,87 120,72" stroke="#A8D9C8" stroke-width="0.5" fill="none" opacity="0.3"/>
-          <circle cx="80" cy="30" r="15" fill="none" stroke="#D4A843" stroke-width="0.6" opacity="0.4"/>
-          <path d="M20,100 L25,60 L30,100 M50,100 L55,55 L60,100 M80,100 L85,65 L90,100" stroke="#A8D9C8" stroke-width="0.5" fill="none" opacity="0.35"/>
-          <text x="60" y="112" text-anchor="middle" font-size="6" fill="#A8D9C8" opacity="0.4" font-family="serif" font-style="italic">Paisagem Mística</text>
-        </svg>
-      </div>
-      <div class="item-overlay">
-        <div>
-          <p class="item-tag">Background Art</p>
-          <p class="item-label">Paisagem Mística</p>
-        </div>
-      </div>
-      <div class="zoom-icon"><svg viewBox="0 0 24 24" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="22" y2="22"/><line x1="8" y1="11" x2="14" y2="11"/><line x1="11" y1="8" x2="11" y2="14"/></svg></div>
-    </div>
-
-    <div class="portfolio-item" data-index="3" data-gallery="portfolio" data-name="Criatura da Névoa" data-tag="Creature Design">
-      <div class="item-placeholder" style="--ph-bg:#F5EAF0;">
-        <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
-          <ellipse cx="60" cy="65" rx="38" ry="32" fill="none" stroke="#E8A8B9" stroke-width="0.7" opacity="0.4"/>
-          <path d="M40,40 Q60,20 80,40" stroke="#E8A8B9" stroke-width="0.8" fill="none" opacity="0.5"/>
-          <circle cx="48" cy="52" r="4" fill="none" stroke="#D4A843" stroke-width="0.6" opacity="0.5"/>
-          <circle cx="72" cy="52" r="4" fill="none" stroke="#D4A843" stroke-width="0.6" opacity="0.5"/>
-          <path d="M50,70 Q60,78 70,70" stroke="#E8A8B9" stroke-width="0.6" fill="none" opacity="0.4"/>
-          <text x="60" y="112" text-anchor="middle" font-size="6" fill="#E8A8B9" opacity="0.4" font-family="serif" font-style="italic">Criatura da Névoa</text>
-        </svg>
-      </div>
-      <div class="item-overlay">
-        <div>
-          <p class="item-tag">Creature Design</p>
-          <p class="item-label">Criatura da Névoa</p>
-        </div>
-      </div>
-      <div class="zoom-icon"><svg viewBox="0 0 24 24" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="22" y2="22"/><line x1="8" y1="11" x2="14" y2="11"/><line x1="11" y1="8" x2="11" y2="14"/></svg></div>
-    </div>
-
-    <div class="portfolio-item item-wide" data-index="4" data-gallery="portfolio" data-name="O Jardim Secreto" data-tag="Cena Completa">
-      <div class="item-placeholder" style="--ph-bg:#E8F0EC;">
-        <svg viewBox="0 0 240 120" xmlns="http://www.w3.org/2000/svg">
-          <defs><radialGradient id="pg4" cx="50%" cy="50%"><stop offset="0%" stop-color="#A8D9C8" stop-opacity="0.3"/><stop offset="100%" stop-color="#A8D9C8" stop-opacity="0"/></radialGradient></defs>
-          <ellipse cx="120" cy="60" rx="100" ry="50" fill="url(#pg4)"/>
-          <path d="M40,100 Q70,60 100,80 Q130,100 160,65 Q190,30 200,70" stroke="#A8D9C8" stroke-width="0.8" fill="none" opacity="0.4"/>
-          <circle cx="120" cy="40" r="12" fill="none" stroke="#D4A843" stroke-width="0.6" opacity="0.4"/>
-          <path d="M80,90 L85,50 M110,90 L115,45 M150,90 L155,55 M175,90 L180,60" stroke="#A8D9C8" stroke-width="0.5" fill="none" opacity="0.35"/>
-          <text x="120" y="114" text-anchor="middle" font-size="6" fill="#A8D9C8" opacity="0.4" font-family="serif" font-style="italic">O Jardim Secreto</text>
-        </svg>
-      </div>
-      <div class="item-overlay">
-        <div>
-          <p class="item-tag">Cena Completa</p>
-          <p class="item-label">O Jardim Secreto</p>
-        </div>
-      </div>
-      <div class="zoom-icon"><svg viewBox="0 0 24 24" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="22" y2="22"/><line x1="8" y1="11" x2="14" y2="11"/><line x1="11" y1="8" x2="11" y2="14"/></svg></div>
-    </div>
-
-  </div>
-</section>
-
-<!-- SKETCH -->
-<section id="sketch">
-  <p class="section-label reveal">Process & Sketchbook</p>
-  <h2 class="section-title reveal"><em>Sketch</em></h2>
-
-  <div class="sketch-grid reveal" id="sketchGrid">
-
-    <div class="sketch-item" data-index="0" data-gallery="sketch" data-name="Esboço de Personagem" data-tag="Pencil Study">
-      <div class="sketch-placeholder" style="background:#EFE4D9;">
-        <svg viewBox="0 0 100 130" width="70%" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="50" cy="35" r="18" fill="none" stroke="#8B6050" stroke-width="0.7" opacity="0.35"/>
-          <ellipse cx="50" cy="90" rx="24" ry="30" fill="none" stroke="#8B6050" stroke-width="0.6" opacity="0.25"/>
-          <path d="M32,60 Q50,75 68,60" stroke="#8B6050" stroke-width="0.5" fill="none" opacity="0.3"/>
-          <line x1="30" y1="95" x2="20" y2="125" stroke="#8B6050" stroke-width="0.5" opacity="0.25"/>
-          <line x1="70" y1="95" x2="80" y2="125" stroke="#8B6050" stroke-width="0.5" opacity="0.25"/>
-        </svg>
-      </div>
-      <div class="item-overlay">
-        <div><p class="item-tag">Pencil Study</p><p class="item-label" style="font-size:15px;">Esboço de Personagem</p></div>
-      </div>
-      <div class="zoom-icon"><svg viewBox="0 0 24 24" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="22" y2="22"/><line x1="8" y1="11" x2="14" y2="11"/><line x1="11" y1="8" x2="11" y2="14"/></svg></div>
-    </div>
-
-    <div class="sketch-item" data-index="1" data-gallery="sketch" data-name="Estudo de Pose" data-tag="Figure Study">
-      <div class="sketch-placeholder" style="background:#EFE4D9;">
-        <svg viewBox="0 0 100 130" width="70%" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="50" cy="28" r="14" fill="none" stroke="#8B6050" stroke-width="0.6" opacity="0.3"/>
-          <path d="M50,42 L50,85" stroke="#8B6050" stroke-width="0.6" opacity="0.25"/>
-          <path d="M50,55 Q35,65 30,80" stroke="#8B6050" stroke-width="0.5" fill="none" opacity="0.3"/>
-          <path d="M50,55 Q65,68 70,78" stroke="#8B6050" stroke-width="0.5" fill="none" opacity="0.3"/>
-          <path d="M50,85 L40,115" stroke="#8B6050" stroke-width="0.5" opacity="0.25"/>
-          <path d="M50,85 L60,115" stroke="#8B6050" stroke-width="0.5" opacity="0.25"/>
-        </svg>
-      </div>
-      <div class="item-overlay">
-        <div><p class="item-tag">Figure Study</p><p class="item-label" style="font-size:15px;">Estudo de Pose</p></div>
-      </div>
-      <div class="zoom-icon"><svg viewBox="0 0 24 24" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="22" y2="22"/><line x1="8" y1="11" x2="14" y2="11"/><line x1="11" y1="8" x2="11" y2="14"/></svg></div>
-    </div>
-
-    <div class="sketch-item" data-index="2" data-gallery="sketch" data-name="Exploração de Rosto" data-tag="Portrait Study">
-      <div class="sketch-placeholder" style="background:#EFE4D9;">
-        <svg viewBox="0 0 100 130" width="70%" xmlns="http://www.w3.org/2000/svg">
-          <ellipse cx="50" cy="60" rx="32" ry="40" fill="none" stroke="#8B6050" stroke-width="0.6" opacity="0.28"/>
-          <ellipse cx="40" cy="52" rx="6" ry="4" fill="none" stroke="#8B6050" stroke-width="0.5" opacity="0.3"/>
-          <ellipse cx="60" cy="52" rx="6" ry="4" fill="none" stroke="#8B6050" stroke-width="0.5" opacity="0.3"/>
-          <path d="M42,70 Q50,76 58,70" stroke="#8B6050" stroke-width="0.5" fill="none" opacity="0.3"/>
-          <path d="M28,45 Q40,38 52,42" stroke="#8B6050" stroke-width="0.4" fill="none" opacity="0.25"/>
-          <path d="M48,42 Q60,38 72,45" stroke="#8B6050" stroke-width="0.4" fill="none" opacity="0.25"/>
-          <path d="M18,50 Q26,58 22,70" stroke="#8B6050" stroke-width="0.4" fill="none" opacity="0.2"/>
-          <path d="M82,50 Q74,58 78,70" stroke="#8B6050" stroke-width="0.4" fill="none" opacity="0.2"/>
-        </svg>
-      </div>
-      <div class="item-overlay">
-        <div><p class="item-tag">Portrait Study</p><p class="item-label" style="font-size:15px;">Exploração de Rosto</p></div>
-      </div>
-      <div class="zoom-icon"><svg viewBox="0 0 24 24" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="22" y2="22"/><line x1="8" y1="11" x2="14" y2="11"/><line x1="11" y1="8" x2="11" y2="14"/></svg></div>
-    </div>
-
-    <div class="sketch-item" data-index="3" data-gallery="sketch" data-name="Mãos em Movimento" data-tag="Gesture Study">
-      <div class="sketch-placeholder" style="background:#EFE4D9;">
-        <svg viewBox="0 0 100 130" width="70%" xmlns="http://www.w3.org/2000/svg">
-          <path d="M30,100 L35,60 Q36,55 40,55 Q44,55 44,60 L44,80" stroke="#8B6050" stroke-width="0.6" fill="none" opacity="0.3"/>
-          <path d="M44,75 L44,52 Q45,48 49,48 Q53,48 53,52 L53,75" stroke="#8B6050" stroke-width="0.6" fill="none" opacity="0.3"/>
-          <path d="M53,75 L53,55 Q54,50 58,50 Q62,50 62,55 L62,75" stroke="#8B6050" stroke-width="0.6" fill="none" opacity="0.3"/>
-          <path d="M62,75 L62,58 Q63,54 67,54 Q71,54 71,58 L71,80" stroke="#8B6050" stroke-width="0.6" fill="none" opacity="0.3"/>
-          <path d="M25,85 Q28,88 30,100 L71,100 L71,80" stroke="#8B6050" stroke-width="0.6" fill="none" opacity="0.25"/>
-        </svg>
-      </div>
-      <div class="item-overlay">
-        <div><p class="item-tag">Gesture Study</p><p class="item-label" style="font-size:15px;">Mãos em Movimento</p></div>
-      </div>
-      <div class="zoom-icon"><svg viewBox="0 0 24 24" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="22" y2="22"/><line x1="8" y1="11" x2="14" y2="11"/><line x1="11" y1="8" x2="11" y2="14"/></svg></div>
-    </div>
-
-  </div>
-</section>
-
-<!-- TABELA DE VALORES -->
-<section id="valores">
-  <p class="section-label reveal">Investimento</p>
-  <h2 class="section-title reveal">Tabela de <em>Valores</em></h2>
-
-  <div class="pricing-grid reveal">
-
-    <div class="price-card">
-      <p class="price-type">Entrada</p>
-      <h3 class="price-name">Sketch</h3>
-      <p class="price-note">Esboço digital finalizado em preto e branco, ideal para estudos e presentes.</p>
-      <div class="price-value"><span>R$</span> 80</div>
-      <ul class="price-items">
-        <li>1 personagem</li>
-        <li>Fundo simples</li>
-        <li>Entrega em 5 dias</li>
-        <li>1 revisão</li>
-        <li>Arquivo PNG</li>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#portfolio">Portfólio</a></li>
+        <li><a href="#precos">Tabela de preços</a></li>
+        <li><a href="#sobre">Sobre mim</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a href="#redes">Redes sociais</a></li>
       </ul>
+      <button class="nav-burger" id="burger" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
+  </nav>
 
-    <div class="price-card featured">
-      <div class="featured-badge">Popular</div>
-      <p class="price-type">Padrão</p>
-      <h3 class="price-name">Ilustração Colorida</h3>
-      <p class="price-note">Ilustração digital completa com paleta de cores e composição elaborada.</p>
-      <div class="price-value"><span>R$</span> 220</div>
-      <ul class="price-items">
-        <li>1 personagem</li>
-        <li>Fundo completo</li>
-        <li>Entrega em 10 dias</li>
-        <li>2 revisões</li>
-        <li>PNG + PSD</li>
-      </ul>
-    </div>
-
-    <div class="price-card">
-      <p class="price-type">Premium</p>
-      <h3 class="price-name">Cena Completa</h3>
-      <p class="price-note">Composição complexa com múltiplos personagens, cenário detalhado e iluminação.</p>
-      <div class="price-value"><span>R$</span> 480</div>
-      <ul class="price-items">
-        <li>Até 3 personagens</li>
-        <li>Cenário elaborado</li>
-        <li>Entrega em 20 dias</li>
-        <li>3 revisões</li>
-        <li>PNG + PSD + fonte</li>
-      </ul>
-    </div>
-
-  </div>
-</section>
-
-<!-- SOBRE MIM -->
-<section id="sobre">
-  <p class="section-label reveal">A Artista</p>
-  <h2 class="section-title reveal">Sobre <em>Mim</em></h2>
-
-  <div class="about-grid reveal">
-    <div class="about-portrait">
-      <div class="about-portrait-hint">
-        Sua foto aqui<br>
-        <span style="font-size:9px; opacity:0.6;">substitua por &lt;img&gt;</span>
+  <!-- ============ HERO ============ -->
+  <header class="hero" id="inicio">
+    <div class="hero-lockup">
+      <div>
+        <h1 class="logo-word">Nyne Art</h1>
+        <p class="logo-tag">Ilustração autoral</p>
       </div>
     </div>
 
-    <div class="about-text">
-      <p>Olá! Sou Nyne, uma ilustradora digital apaixonada por criar mundos e personagens que habitam entre o <strong>onírico e o palpável</strong>. Cada traço é uma tentativa de capturar o que as palavras muitas vezes não conseguem dizer.</p>
-      <p>Minha inspiração vem da mitologia, da natureza e de tudo aquilo que existe na fronteira entre <strong>o real e o fantástico</strong>. Trabalho principalmente com ilustração de personagens, book covers, stickers e arte para projetos criativos.</p>
-      <p>Acredito que arte é conexão — e adoraria criar algo especial junto com você.</p>
+    <div class="hero-frame">
+      <div class="hero-frame-bar">
+        <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+        <span class="label">NYNEART.COM</span>
+      </div>
+      <div class="hero-illustration" onclick="openLightbox(this)">
+        <!-- Substitua a imagem abaixo pela sua ilustração de destaque -->
+        <img src="sua-ilustracao-de-destaque.jpg" alt="Ilustração de destaque de Nyne Art" style="display:none;"
+          onload="this.style.display='block'; this.nextElementSibling.style.display='none';">
+        <p>✦ coloque aqui sua ilustração de destaque ✦</p>
+      </div>
+    </div>
 
-      <div class="about-detail">
-        <div class="about-detail-row">
-          <span class="key">Estilo</span>
-          <span class="val">Fantasia · Semi-realismo · Cute</span>
+    <div class="hero-scroll">Role para explorar<span class="arrow"></span></div>
+  </header>
+
+  <!-- ============ PORTFOLIO ============ -->
+  <section class="portfolio" id="portfolio">
+    <div class="wrap">
+      <span class="eyebrow">Trabalhos recentes</span>
+      <h2 class="section-title">Portfólio</h2>
+      <p class="section-sub">Uma seleção de ilustrações autorais — personagens, cenas e universos criados com muito
+        carinho. Substitua cada quadro pela sua própria arte.</p>
+      <div class="grid-portfolio">
+        <div class="port-card">
+          <div class="port-card-bar"><span class="dot"></span><span class="dot"></span></div>
+          <div class="port-card-img" onclick="openLightbox(this)"><img src="ilustracao-01.jpg" alt="Sonhos de sábado"
+              style="display:none;width:100%;height:100%;object-fit:cover;"
+              onload="this.style.display='block'; this.nextElementSibling.style.display='none';"><span>ilustração
+              01</span></div>
+          <div class="port-card-title">Sonhos de sábado</div>
         </div>
-        <div class="about-detail-row">
-          <span class="key">Ferramentas</span>
-          <span class="val">Procreate · Clip Studio · Photoshop</span>
+        <div class="port-card">
+          <div class="port-card-bar"><span class="dot"></span><span class="dot"></span></div>
+          <div class="port-card-img" onclick="openLightbox(this)"><img src="ilustracao-02.jpg" alt="Entre nuvens"
+              style="display:none;width:100%;height:100%;object-fit:cover;"
+              onload="this.style.display='block'; this.nextElementSibling.style.display='none';"><span>ilustração
+              02</span></div>
+          <div class="port-card-title">Entre nuvens</div>
         </div>
-        <div class="about-detail-row">
-          <span class="key">Experiência</span>
-          <span class="val">+5 anos</span>
+        <div class="port-card">
+          <div class="port-card-bar"><span class="dot"></span><span class="dot"></span></div>
+          <div class="port-card-img" onclick="openLightbox(this)"><img src="ilustracao-03.jpg" alt="Saturno & cia"
+              style="display:none;width:100%;height:100%;object-fit:cover;"
+              onload="this.style.display='block'; this.nextElementSibling.style.display='none';"><span>ilustração
+              03</span></div>
+          <div class="port-card-title">Saturno & cia</div>
         </div>
-        <div class="about-detail-row">
-          <span class="key">Idiomas</span>
-          <span class="val">Português · Inglês</span>
+        <div class="port-card">
+          <div class="port-card-bar"><span class="dot"></span><span class="dot"></span></div>
+          <div class="port-card-img" onclick="openLightbox(this)"><img src="ilustracao-04.jpg" alt="Fita cassete"
+              style="display:none;width:100%;height:100%;object-fit:cover;"
+              onload="this.style.display='block'; this.nextElementSibling.style.display='none';"><span>ilustração
+              04</span></div>
+          <div class="port-card-title">Fita cassete</div>
+        </div>
+        <div class="port-card">
+          <div class="port-card-bar"><span class="dot"></span><span class="dot"></span></div>
+          <div class="port-card-img" onclick="openLightbox(this)"><img src="ilustracao-05.jpg" alt="Pausa para café"
+              style="display:none;width:100%;height:100%;object-fit:cover;"
+              onload="this.style.display='block'; this.nextElementSibling.style.display='none';"><span>ilustração
+              05</span></div>
+          <div class="port-card-title">Pausa para café</div>
+        </div>
+        <div class="port-card">
+          <div class="port-card-bar"><span class="dot"></span><span class="dot"></span></div>
+          <div class="port-card-img" onclick="openLightbox(this)"><img src="ilustracao-06.jpg" alt="Diário de bordo"
+              style="display:none;width:100%;height:100%;object-fit:cover;"
+              onload="this.style.display='block'; this.nextElementSibling.style.display='none';"><span>ilustração
+              06</span></div>
+          <div class="port-card-title">Diário de bordo</div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- CTA -->
-<div class="cta-band">
-  <p class="section-label">Vamos criar juntas?</p>
-  <h2 class="cta-title">Encomendar <em>Ilustração</em></h2>
-  <a href="mailto:contato@nyneart.com" class="cta-btn">Entrar em Contato</a>
-</div>
-
-<!-- FOOTER -->
-<footer>
-  <span>© 2025 <em>Nyne Art</em> — Todos os direitos reservados</span>
-  <span style="letter-spacing:0.08em;">Feito com muito ☕ e traços</span>
-</footer>
-
-<!-- LIGHTBOX -->
-<div id="lightbox">
-  <div class="lb-content">
-    <div class="lb-arrow prev" id="lbPrev">&#8592;</div>
-    <div id="lb-display">
-      <div class="lb-ph" id="lbPlaceholder">
-        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="8" y="8" width="44" height="44" rx="2" stroke="#E8896A" stroke-width="1"/>
-          <circle cx="30" cy="28" r="8" stroke="#E8896A" stroke-width="1"/>
-          <path d="M8 42 L18 32 L26 40 L34 30 L52 52" stroke="#E8896A" stroke-width="1" fill="none"/>
-        </svg>
-        <span id="lbName">Ilustração</span>
+  <!-- ============ PRICING ============ -->
+  <section class="pricing" id="precos">
+    <div class="wrap">
+      <span class="eyebrow">Encomendas</span>
+      <h2 class="section-title">Tabela de preços</h2>
+      <p class="section-sub">Cada pacote inclui esboço, revisão e arquivo final em alta resolução. Valores em reais,
+        sujeitos a complexidade.</p>
+      <div class="grid-pricing">
+        <div class="price-card">
+          <p class="price-name">Chibi</p>
+          <p class="price-value">R$120</p>
+          <ul class="price-list">
+            <li>Personagem único</li>
+            <li>Fundo simples</li>
+            <li>1 revisão</li>
+            <li>Entrega em 5 dias</li>
+          </ul>
+          <a href="#contato" class="btn ghost">Encomendar</a>
+        </div>
+        <div class="price-card featured">
+          <span class="price-badge">Mais pedido</span>
+          <p class="price-name">Meia figura</p>
+          <p class="price-value">R$230</p>
+          <ul class="price-list">
+            <li>Personagem detalhado</li>
+            <li>Fundo ilustrado</li>
+            <li>2 revisões</li>
+            <li>Entrega em 8 dias</li>
+          </ul>
+          <a href="#contato" class="btn">Encomendar</a>
+        </div>
+        <div class="price-card">
+          <p class="price-name">Corpo inteiro</p>
+          <p class="price-value">R$380</p>
+          <ul class="price-list">
+            <li>Cena completa</li>
+            <li>Fundo elaborado</li>
+            <li>3 revisões</li>
+            <li>Entrega em 12 dias</li>
+          </ul>
+          <a href="#contato" class="btn ghost">Encomendar</a>
+        </div>
       </div>
     </div>
-    <div class="lb-arrow next" id="lbNext">&#8594;</div>
-  </div>
-  <div class="lb-close" id="lbClose">&#215;</div>
-  <div class="lb-info">
-    <div class="lb-info-name" id="lbInfoName"></div>
-    <div class="lb-info-tag" id="lbInfoTag"></div>
-  </div>
-  <div class="lb-counter" id="lbCounter"></div>
-</div>
+  </section>
 
-<script src="script.js"></script>
+  <!-- ============ SOBRE ============ -->
+  <section class="about" id="sobre">
+    <div class="wrap about-grid">
+      <div class="about-portrait"><span>sua foto ou<br>autorretrato</span></div>
+      <div class="about-text">
+        <span class="eyebrow">Sobre mim</span>
+        <h2 class="section-title">Oi, eu sou a Nyne</h2>
+        <p>Ilustradora apaixonada por criar mundos fofos e nostálgicos — nuvens, planetas e pequenos personagens que
+          carregam grandes histórias.</p>
+        <p>Trabalho principalmente com arte digital, misturando referências de pixel art com traços suaves e paleta
+          pastel. Cada encomenda é feita sob medida, com carinho do primeiro esboço ao arquivo final.</p>
+        <div class="about-tags">
+          <span>Arte digital</span>
+          <span>Personagens</span>
+          <span>Capas & pôsteres</span>
+          <span>Pixel art</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTATO ============ -->
+  <section class="contact" id="contato">
+    <div class="wrap" style="text-align:center;">
+      <span class="eyebrow">Vamos criar juntas?</span>
+      <h2 class="section-title">Entre em contato</h2>
+    </div>
+    <div class="contact-card">
+      <div class="contact-card-header">
+        <h3>Tem uma ideia em mente?<br>Me conta os detalhes.</h3>
+      </div>
+      <form class="contact-form"
+        onsubmit="event.preventDefault(); alert('Obrigada pela mensagem! Vou te responder em breve ✦');">
+        <div class="field">
+          <label for="nome">Nome</label>
+          <input id="nome" type="text" placeholder="Seu nome" required>
+        </div>
+        <div class="field">
+          <label for="email">E-mail</label>
+          <input id="email" type="email" placeholder="seu@email.com" required>
+        </div>
+        <div class="field">
+          <label for="msg">Mensagem</label>
+          <textarea id="msg" rows="4" placeholder="Conte sobre a ilustração que você imagina..." required></textarea>
+        </div>
+        <button type="submit" class="btn">Enviar mensagem</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ REDES SOCIAIS ============ -->
+  <section class="social" id="redes">
+    <div class="wrap">
+      <span class="eyebrow">Me acompanhe</span>
+      <h2 class="section-title">Redes sociais</h2>
+      <p class="section-sub" style="margin-left:auto;margin-right:auto;">Bastidores, esboços e novidades saem primeiro
+        por lá.</p>
+      <div class="social-row">
+        <a class="social-btn" href="#" target="_blank" rel="noopener">
+          <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="#2E2144" stroke-width="2">
+            <rect x="3" y="3" width="18" height="18" rx="5" />
+            <circle cx="12" cy="12" r="4" />
+            <circle cx="17.5" cy="6.5" r="1" />
+          </svg>
+          Instagram
+        </a>
+        <a class="social-btn" href="#" target="_blank" rel="noopener">
+          <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="#2E2144" stroke-width="2">
+            <path d="M9 8h-2a2 2 0 0 0 -2 2v8a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-8a2 2 0 0 0 -2 -2h-2" />
+            <rect x="9" y="2" width="6" height="10" rx="2" />
+          </svg>
+          TikTok
+        </a>
+        <a class="social-btn" href="#" target="_blank" rel="noopener">
+          <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="#2E2144" stroke-width="2">
+            <rect x="4" y="4" width="16" height="16" rx="2" />
+            <path d="M4 9h16M9 4v16" />
+          </svg>
+          Pinterest
+        </a>
+        <a class="social-btn" href="#" target="_blank" rel="noopener">
+          <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="#2E2144" stroke-width="2">
+            <path d="M3 8l9 6l9 -6" />
+            <rect x="3" y="5" width="18" height="14" rx="2" />
+          </svg>
+          E-mail
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span class="logo-pixel">Nyne Art</span> © 2026 — feito com ✦ para quem sonha acordado
+  </footer>
+
+  <!-- ============ LIGHTBOX ============ -->
+  <div class="lightbox" id="lightbox" onclick="if(event.target===this)closeLightbox();">
+    <button class="lightbox-close" aria-label="Fechar" onclick="closeLightbox()">✕</button>
+    <img class="lightbox-img" id="lightboxImg" src="" alt="Ilustração ampliada">
+  </div>
+
+  <script src="./script.js"></script>
+
 </body>
+
 </html>
